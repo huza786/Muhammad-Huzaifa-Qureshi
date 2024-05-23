@@ -19,6 +19,7 @@ body {
     border-radius: 1rem;
     padding: 2rem;
     flex: 1;
+           
 
 }
 .profile-pic-mobile{visibility: hidden;}
@@ -37,7 +38,7 @@ body {
     position: absolute;
 
     margin: 0px;
-    z-index: 1;
+
 
 }
 
@@ -92,7 +93,7 @@ body {
 @media screen and (max-width:1050px) {
     .main-flex {
         display: flex;
-        flex-direction: column;
+        flex-direction: column-reverse;
         justify-content: center;
         gap: 0px;
         align-content: center;
@@ -101,26 +102,38 @@ body {
     }
 
     .intro-main {
-       
+       position: static;
         width: fit-content;
         margin-left: auto;
         margin-right: auto;
+        padding-right: 0; /* Remove any padding to the right */
+        padding-left: 0;  /* Optionally remove padding to the left */
+        margin-right: 0;  /* Remove any margin to the right */
+        margin-left: 0;   
+        justify-content: center;
+        text-align: center;
  
     }
     .name-main{text-align: center;}
     .tag-line{text-align: center;}
     .sub-tag-line{text-align: center;}
     .buttons-row{margin: auto;}
-
+.behind-profile-pic{position: absolute;}
+.profile-avatar{position: relative;}
     .profile-pic {
-        visibility: hidden;
+        position: relative;
         display: block;
         width: 100%;
+     
         margin: 0px;
         padding: 0px;
     }
     .profile-pic-mobile{
-        visibility: hidden;
+        position: absolute;
+      display: none;
+      visibility: visible;
+      width: 100%;
+      margin: 1rem 0;
         
     }
 
