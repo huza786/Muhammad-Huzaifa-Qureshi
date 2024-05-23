@@ -21,6 +21,7 @@ body {
     flex: 1;
 
 }
+.profile-pic-mobile{visibility: hidden;}
 
 .profile-pic {
     position: relative;
@@ -29,16 +30,17 @@ body {
 
 .behind-profile-pic {
     position: absolute;
- 
+
 }
 
 .profile-avatar {
     position: absolute;
-   
+
     margin: 0px;
     z-index: 1;
-   
+
 }
+
 .profile-avatar>img {
     height: 30rem;
     width: 30rem;
@@ -86,18 +88,40 @@ body {
     border-radius: 6%;
     margin-left: 2%;
 }
+
 @media screen and (max-width:1050px) {
-    .main-flex{
+    .main-flex {
         display: flex;
         flex-direction: column;
-    justify-content: center;
-   
+        justify-content: center;
+        gap: 0px;
+        align-content: center;
+        align-items: center;
+
     }
-        .intro-main{display: block
-            ;
+
+    .intro-main {
+       
+        width: fit-content;
+        margin-left: auto;
+        margin-right: auto;
+ 
+    }
+    .name-main{text-align: center;}
+    .tag-line{text-align: center;}
+    .sub-tag-line{text-align: center;}
+    .buttons-row{margin: auto;}
+
+    .profile-pic {
+        visibility: hidden;
+        display: block;
         width: 100%;
-        }
-            .profile-pic{display: block;
-            width: 100%;}
-    
+        margin: 0px;
+        padding: 0px;
+    }
+    .profile-pic-mobile{
+        visibility: hidden;
+        
+    }
+
 }
