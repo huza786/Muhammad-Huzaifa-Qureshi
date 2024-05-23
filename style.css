@@ -1,0 +1,103 @@
+body {
+    background-color: #28293E;
+}
+
+* {
+
+    font-family: "Titillium Web", sans-serif;
+    color: white;
+}
+
+.main-flex {
+    display: flex;
+    flex-direction: row;
+    gap: 10rem;
+    justify-content: space-evenly;
+}
+
+.intro-main {
+    border-radius: 1rem;
+    padding: 2rem;
+    flex: 1;
+
+}
+
+.profile-pic {
+    position: relative;
+    flex: 1;
+}
+
+.behind-profile-pic {
+    position: absolute;
+ 
+}
+
+.profile-avatar {
+    position: absolute;
+   
+    margin: 0px;
+    z-index: 1;
+   
+}
+.profile-avatar>img {
+    height: 30rem;
+    width: 30rem;
+    margin: 0px;
+    padding: 0px;
+
+}
+
+
+.intro-main span {
+    font-weight: 700;
+}
+
+.name-main {
+    font-size: medium;
+    font-weight: 200;
+}
+
+.tag-line {
+    font-size: 3rem;
+    font-weight: 900;
+    color: #078D84;
+    padding: 0%;
+    margin: 0%;
+}
+
+.sub-tag-line {
+    font-weight: 400;
+    font-size: large;
+}
+
+.hire-me-button {
+    background-color: #078D84;
+    border: none;
+    width: 6rem;
+    height: 3rem;
+    border-radius: 6%;
+}
+
+.portfolio-button {
+    background-color: #28293E;
+    border: white solid 1px;
+    width: 6rem;
+    height: 3rem;
+    border-radius: 6%;
+    margin-left: 2%;
+}
+@media screen and (max-width:1050px) {
+    .main-flex{
+        display: flex;
+        flex-direction: column;
+    justify-content: center;
+   
+    }
+        .intro-main{display: block
+            ;
+        width: 100%;
+        }
+            .profile-pic{display: block;
+            width: 100%;}
+    
+}
