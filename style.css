@@ -6,6 +6,8 @@ body {
 
     font-family: "Titillium Web", sans-serif;
     color: white;
+    margin: 0;
+    padding: 0;
 }
 
 .main-flex {
@@ -13,16 +15,20 @@ body {
     flex-direction: row;
     gap: 10rem;
     justify-content: space-evenly;
+    align-content: center;
 }
 
 .intro-main {
     border-radius: 1rem;
     padding: 2rem;
     flex: 1;
-           
+
 
 }
-.profile-pic-mobile{visibility: hidden;}
+
+.profile-pic-mobile {
+    visibility: hidden;
+}
 
 .profile-pic {
     position: relative;
@@ -38,6 +44,7 @@ body {
     position: absolute;
 
     margin: 0px;
+    bottom: 30px;
 
 
 }
@@ -80,7 +87,15 @@ body {
     height: 3rem;
     border-radius: 6%;
 }
-
+.buttons-row{margin-top: 10px;}
+.hire-me-button:hover{
+    background-color: black;
+    border: white solid 1px;
+}
+.portfolio-button:hover{
+    background-color: #078D84;
+    border: none;
+}
 .portfolio-button {
     background-color: #28293E;
     border: white solid 1px;
@@ -88,6 +103,14 @@ body {
     height: 3rem;
     border-radius: 6%;
     margin-left: 2%;
+}
+.project-banner{
+    background-color: #078D84;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 100%;
+
+    text-align: center;
 }
 
 @media screen and (max-width:1050px) {
@@ -102,47 +125,79 @@ body {
     }
 
     .intro-main {
-       position: static;
+        position: static;
         width: fit-content;
         margin-left: auto;
         margin-right: auto;
-        padding-right: 0; /* Remove any padding to the right */
-        padding-left: 0;  /* Optionally remove padding to the left */
-        margin-right: 0;  /* Remove any margin to the right */
-        margin-left: 0;   
+        padding-right: 0;
+        /* Remove any padding to the right */
+        padding-left: 0;
+        /* Optionally remove padding to the left */
+        margin-right: 0;
+        /* Remove any margin to the right */
+        margin-left: 0;
         justify-content: center;
         text-align: center;
- 
+
     }
-    .name-main{text-align: center;}
-    .tag-line{text-align: center;}
-    .sub-tag-line{text-align: center;}
-    .buttons-row{margin: auto;}
-.behind-profile-pic{position: absolute;
-top: 40px;}
-.profile-avatar{position: relative;}
+
+    .name-main {
+        text-align: center;
+    }
+
+    .tag-line {
+        text-align: center;
+    }
+
+    .sub-tag-line {
+        text-align: center;
+    }
+
+    .buttons-row {
+        margin: auto;
+        margin-top: 10px;
+    }
+
+    .behind-profile-pic {
+        position: absolute;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        top: 40px;
+    }
+
+    .profile-avatar {
+        position: relative;
+    }
+
     .profile-pic {
         position: static;
         display: block;
-       
-     
+
+
         margin: 0px;
         padding: 0px;
     }
-    .behind-profile-pic>img{
+
+    .behind-profile-pic>img {
         width: 100%;
+        height: 100%;
+        padding: 0;
+        margin: auto;
     }
-    .profile-avatar>img{
+
+    .profile-avatar>img {
         width: 100%;
         height: 100%;
     }
-    .profile-pic-mobile{
+
+    .profile-pic-mobile {
         position: absolute;
-      display: none;
-      visibility: visible;
-      width: 100%;
-      margin: 1rem 0;
-        
+        display: none;
+        visibility: visible;
+        width: 100%;
+        margin: 1rem 0;
+
     }
 
 }
